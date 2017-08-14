@@ -1,0 +1,38 @@
+html{
+    background-color: #80C85F
+}
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+    text-shadow: 2px 2px 5px rgba(37, 112, 187, 0.70);
+    }
+    
+div{
+
+    
+    text-align: left;
+    background-color: rgba(135, 176, 216, 0.70);
+    border-radius: 10px;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    
+}
+button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #253226;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    float: center;
+  }
