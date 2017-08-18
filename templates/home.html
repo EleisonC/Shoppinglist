@@ -1,0 +1,31 @@
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+{%extends "layout.html"%}
+
+{%block body%}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+<div class="container">
+        
+              <div class="jumbotron text-center">
+                <h1>Welcome to Shopping List</h1>
+                <p class="lead">Build memories of all items you would like to keep track of in the future.<br>And have a chance to share with friends all over .</p>
+              </div>
+            <div class="container">
+              <form action="/login" class="form-signin", method="POST">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <label >username</label>
+                <input type="text"  class="form-control" placeholder="username" required autofocus>
+                <label>Password</label>
+                <input type="password"  class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              </form>
+            </div>    
+</div>
+{% endif %}
+{%endblock%} 
